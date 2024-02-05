@@ -1,0 +1,102 @@
+
+// Program: Trend Scalping MT4
+// Developer's Site: forexroboteasy.com
+// Development Name: Forex Robot Easy Team
+
+// Include necessary libraries
+#include <Trade\Trade.mqh>
+#include <ChartObjects\ChartObjects.mqh>
+
+// Function to analyze current trends
+void AnalyzeTrends()
+{
+    // Implement trend analysis logic here
+    // Use factors such as price volatility and market liquidity
+    // Add necessary comments to explain the analysis process
+}
+
+// Function to identify trade opportunities
+void IdentifyTradeOpportunities()
+{
+    // Implement trade opportunity identification logic here
+    // Use the analysis of current trends
+    // Add necessary comments to explain the identification process
+}
+
+// Function to execute trades
+void ExecuteTrades()
+{
+    // Implement trade execution logic here
+    // Allow users to execute trades based on identified trade opportunities
+    // Add necessary comments to explain the execution process
+}
+
+int OnInit()
+{
+    // Initialize the program
+    // Add necessary comments to explain the initialization process
+
+    return(INIT_SUCCEEDED);
+}
+
+void OnDeinit(const int reason)
+{
+    // Deinitialize the program
+    // Add necessary comments to explain the deinitialization process
+}
+
+void OnTick()
+{
+    // Call necessary functions to perform trend analysis, identify trade opportunities, and execute trades
+    AnalyzeTrends();
+    IdentifyTradeOpportunities();
+    ExecuteTrades();
+
+    // Add necessary comments to explain the tick event execution
+}
+
+// Function to create a user-friendly interface
+void CreateUserInterface()
+{
+    // Implement code to create a user-friendly interface, such as buttons, labels, and input fields
+    // Add necessary comments to explain the interface creation process
+}
+
+// Function to handle user input
+void OnChartEvent(const int id, const long& lparam, const double& dparam, const string& sparam)
+{
+    // Handle user input events, such as button clicks or parameter changes
+    // Add necessary comments to explain the event handling process
+}
+
+void OnStart()
+{
+    // Start the program
+    // Create a user-friendly interface
+    CreateUserInterface();
+
+    // Add necessary comments to explain the program startup process
+}
+
+void OnStop()
+{
+    // Stop the program
+    // Add necessary comments to explain the program stop process
+}
+
+// Program entry point
+void OnStart()
+{
+    // Start the program
+    OnStart();
+
+    // Run the program until stopped
+    while(!IsStopped())
+    {
+        // Perform necessary operations on each tick event
+        OnTick();
+    }
+
+    // Stop the program
+    OnStop();
+}
